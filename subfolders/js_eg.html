@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="age">
+    <button onclick="check()">Check Eligibility</button>
+    <h1 id="disp">.</h1>
+    <script>
+        function check(){
+            ageobj=document.getElementById("age");
+            dispobj=document.getElementById("disp");
+            if (ageobj.value>=18){
+                dispobj.innerHTML="Eligible to vote"
+                dispobj.style.color="green"
+            }
+            else{
+                dispobj.innerHTML="Not eligible to vote"
+                dispobj.style.color="red"
+            }
+        }
+    </script>
+</body>
+</html>
