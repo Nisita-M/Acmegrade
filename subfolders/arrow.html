@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        a=function(){
+            console.log("Hello all");
+        }
+        b=()=>{
+            console.log("I am an arrow function");
+        }
+        function wrapper(fn){
+            fn()
+        }
+        wrapper(a)
+        wrapper(b)
+        wrapper(()=>{
+            console.log("I am an inline arrow function")
+        })
+        data=[10,40, 6,2,5]
+        function transform(e){
+            return e*e;
+        }
+        sq=data.map(transform)
+        console.log("sq res=", sq)
+    </script>
+</body>
+</html>
