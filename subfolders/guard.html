@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function authguard(fn,uname,upass){
+            if (uname=="acme" && upass=="intern"){
+                fn()
+            }
+            else{
+                alert("Invalid cred")
+            }
+        }
+        add=function(){
+            c=10+20;
+            console.log("Result-",c)
+        }
+        odd_even=function(){
+            n=14
+            if(n%2==0){
+                console.log(`${n} is even`)
+            }
+            else{
+                console.log(`${n} is odd`)
+            }
+        }
+        authguard(add,"acme","intern")
+        authguard(odd_even,"acme","intern")
+
+        authguard(()=> {
+            console.log("I am arrow");
+            console.log("Hello all");
+        },"acme","intern");
+    </script>
+</body>
+</html>
