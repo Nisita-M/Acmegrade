@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width:750px;
+            height:600px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+        .title_container{
+            
+            background-color: rgb(255, 255, 255);
+            height: 25%;
+            padding:1px;
+            box-sizing: border-box;
+        }
+        .one{
+            
+            color: rgb(199, 21, 21);
+            display:block;
+            font-family:'Times New Roman', Times, serif;
+            font-size:65px ;
+            font-weight: bold;
+            padding-top: 35px;
+            text-align: center;
+        }
+        .two{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(94, 93, 93);
+            padding-top: 5px;
+            font-size: 1.15em;
+            text-align: center;
+            
+        }
+        .panel-container{
+            height:58%;
+            background-color: white ;
+            display: flex;
+        }
+        .left-panel {
+            width: 50%;
+            height: 100%;
+            background-color:white;
+            padding: 25px;
+            box-sizing: border-box;            
+        }
+        .part{
+            letter-spacing: 0.5px;
+            color: gray;
+            width:95%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.88em;
+            line-height: 25px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            
+        }
+        .part span{
+            color: rgb(50, 50, 193);
+        }
+        .part span:hover{
+            text-decoration: underline;
+        }
+
+        .box{
+           
+            height: 45px;
+            display: flex;
+            margin: 10px 10px 10px 0px;
+            border: 1px solid rgba(128, 128, 128, 0.29);
+            border-radius: 3px;            
+        }
+        .box:hover{
+            background-color: rgba(208, 205, 205, 0.179);
+            cursor: pointer;
+        }
+        .box-two{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1em;
+            color: rgb(98, 98, 98);
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            height:15px;
+        }
+        .box-two:hover{
+            background-color: rgba(208, 205, 205, 0.179);
+            cursor: pointer;
+        }
+        .panel-container img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin:7px;
+            margin-left: 10px;
+            
+        }
+        .panel-container .text{
+            padding: 12px;
+            padding-left: 15px;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .vl{
+            height:300px;
+            border-left: 0.5px solid rgba(140, 138, 138, 0.442);
+            margin-top: 35px;
+            background-color: white;
+        }
+        .right-panel{
+            width:50%;
+            height:100%;
+            padding: 25px;
+            box-sizing: border-box;
+            background-color: white; 
+        }
+        .text-one{
+            padding-top: 10px;
+            padding-bottom: 4px;
+            font-weight: bold;
+            font-size: 0.9em;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .right-panel input{
+            width: 100%;
+            height: 45px;
+            border: 1px solid rgba(128, 128, 128, 0.29);
+            font-size: 1em;
+            padding-left:10px ;
+            color: rgba(128, 128, 128, 0.397);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .text-two{
+            width:71%;
+            padding-top: 35px;
+            display: inline-block;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            font-size: 0.85em;
+            color: gray;
+            letter-spacing: 0.8px;
+        }
+        .text-two:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .right-panel button{
+            background-color: rgba(48, 120, 255, 0.479);
+            border-radius: 20px;
+            height: 40px;
+            width: 27%;
+            border: 0px solid grey;
+            color: white;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        .info{
+            background-color: rgba(128, 128, 128, 0.123);
+            height: 45px;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            width: 100%;
+            font-size: 14px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            justify-content: center;
+            padding-top: 10px;
+            color: rgb(106, 106, 106);
+        }
+        .info span{
+            list-style:disc;
+            padding: 0px;
+            margin-right: 5px;
+            position: relative;
+            left:0px;
+        }
+        .dt{
+            
+            text-align: center;
+            vertical-align: middle;
+            height: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="title_container">
+                <div class="one">Quora</div>
+                <div class="two">A place to share knowledge and better understand the world</div>
+            </div>
+            <div class="panel-container">
+                <div class="left-panel">
+                <div class="part">
+                    By continuing you indicate that you agree to Quora's <span>Terms of Service</span> and <span>Privacy Policy</span> .
+                </div>
+                <div class="box">
+                    <img src="OIP.jpg" alt="icon">
+                    <div  class="text">Continue with Google</div>
+                </div>
+                <div class="box">
+                    <img src="OIP (1).jpg" alt="icon">
+                    <div class="text">Continue with Facebook</div>
+                </div>
+                <div class="box-two"> Sign up with email</div>
+                </div>
+                <div class="vl"></div>
+                <div class="right-panel">
+                    <div style=" font-size: 0.99em; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:600;padding-top: 15px;">Login</div>
+                    <hr style="color: rgba(128, 128, 128, 0.333); border-top: 1px solid rgba(128, 128, 128, 0.182);">
+                    <div class="text-one">Email</div>
+                    <input placeholder="Your email">
+                    <div class="text-one">Password</div>
+                    <input placeholder="Your password">
+                    <div class="text-two"> Forgot password?</div>
+                    <button>Login</button>
+                </div>
+            </div>
+            <hr style="color: rgba(128, 128, 128, 0.333); border-top: 1px solid rgba(128, 128, 128, 0.182);">
+            <div style="text-align: center;display: block; padding: 10px;color: blue;">हिन्दी >
+            </div>
+            <div class="info">
+                <span>About</span><span class="dt">.</span>
+                <span>Careers</span><span class="dt">.</span>
+                <span>Privacy</span><span class="dt">.</span>
+                <span>Terms</span><span class="dt">.</span>
+                <span>Contact</span><span class="dt">.</span>
+                <span>Languages</span><span class="dt">.</span>
+                <span>Your Ad Choices</span><span class="dt">.</span>
+                <span> Press</span><span class="dt">.</span>
+                <span>© Quora, Inc. 2024</span>               
+                </div>
+        </div>
+        
+    </div>
+</body>
+</html>
