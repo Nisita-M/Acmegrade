@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        countries = ["india","japan","france","malaysia","singapore"]
+        capital=countries.map((ele)=>{
+            return ele.toUpperCase()
+        })
+        console.log(capital)
+
+        student=[
+            {name : "Nisita", age : 18},
+            {name : "Akash", age : 17},
+            {name : "Samyuktha", age : 16 }
+        ]
+        details = student.map ((obj)=>{
+            obj.name=obj.name.toUpperCase();
+            obj['eligible']=obj.age>=18;
+            return obj.eligible;
+        })
+        fil_details=student.filter((obj)=>{
+            obj['eligible']=obj.age>=18;
+            return obj.eligible;
+        })
+        console.log(details)
+        console.log(fil_details)
+    </script>
+</body>
+</html>
